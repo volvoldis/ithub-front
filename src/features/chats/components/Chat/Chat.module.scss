@@ -1,0 +1,98 @@
+.card {
+  height: rem(660);
+  border-radius: 0;
+
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100dvh;
+    z-index: 200;
+  }
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: rem(12);
+
+  svg {
+    stroke: var(--mantine-color-cyan-9);
+  }
+
+  @mixin light {
+    border-bottom: 1px solid var(--mantine-color-gray-4);
+  }
+
+  @mixin dark {
+    border-bottom: 1px solid var(--mantine-color-dark-8);
+  }
+}
+
+.link {
+  p {
+    color: var(--mantine-color-secondary-5);
+  }
+
+  @mixin hover {
+    p {
+      color: var(--mantine-color-primary-5);
+    }
+  }
+}
+
+.badge {
+  text-transform: none;
+}
+
+.messageLine {
+  padding: rem(2) rem(4);
+  justify-content: space-between;
+}
+
+.message {
+  gap: rem(2);
+  padding: rem(4) rem(10);
+
+  border-radius: 4px;
+
+  p {
+    font-size: rem(12);
+    color: #ffffff;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 9px;
+    line-height: 9px;
+    text-align: right;
+  }
+}
+
+.messageRecepient {
+  justify-self: flex-start;
+  background-color: var(--mantine-color-cyan-9);
+  span {
+    text-align: left;
+  }
+}
+
+.messageSender {
+  margin-left: auto;
+  background-color: var(--mantine-color-cyan-7);
+  span {
+    text-align: right;
+  }
+}
+
+.submitIcon {
+  svg {
+    stroke: var(--mantine-color-cyan-9);
+  }
+}

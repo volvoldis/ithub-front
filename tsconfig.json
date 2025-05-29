@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": ["./webpack.config.ts", "./src/**/*.ts", "./src/**/*.tsx", "./config/**/*.ts", "./config/**/*.tsx"]
+}

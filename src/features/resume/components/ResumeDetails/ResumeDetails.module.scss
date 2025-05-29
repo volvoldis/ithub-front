@@ -1,0 +1,16 @@
+.card {
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+}
+
+.avatarBox {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: rem(12);
+  right: rem(12);
+  text-transform: none;
+}

@@ -1,0 +1,34 @@
+.wrap {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @mixin light {
+    border-bottom: 1px solid var(--mantine-color-gray-4);
+    background-color: var(--mantine-color-white);
+  }
+
+  @mixin dark {
+    background-color: var(--mantine-color-bg-5);
+    border-bottom: 1px solid var(--mantine-color-dark-8);
+  }
+}
+
+.inner {
+  padding: rem(16) 0;
+}
+
+.logoCol {
+  @media (max-width: $mantine-breakpoint-lg) {
+    order: 2;
+    a {
+      margin: 0 auto;
+    }
+  }
+}
+
+.userCol {
+  @media (max-width: $mantine-breakpoint-lg) {
+    order: 3;
+  }
+}

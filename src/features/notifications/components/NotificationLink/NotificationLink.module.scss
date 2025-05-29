@@ -1,0 +1,13 @@
+.iconLink {
+  height: rem(32);
+
+  svg {
+    stroke: var(--mantine-color-secondary-5);
+  }
+
+  @mixin hover {
+    svg {
+      stroke: var(--mantine-color-primary-5);
+    }
+  }
+}

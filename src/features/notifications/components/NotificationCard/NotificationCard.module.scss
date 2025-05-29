@@ -1,0 +1,46 @@
+.card {
+  padding: rem(12);
+
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+}
+
+.notify {
+  justify-content: space-between;
+  align-items: center;
+  gap: rem(12);
+}
+
+.notifyInner {
+  align-items: center;
+  gap: rem(4) rem(12);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: rem(14);
+}
+
+.time {
+  font-size: rem(12);
+  color: var(--mantine-color-secondary-6);
+}
+
+.msg {
+  font-size: rem(14);
+  line-height: 1.2;
+
+  a {
+    font-size: rem(14);
+    line-height: 1.2;
+  }
+}
+
+.icon {
+  @mixin hover {
+    svg {
+      stroke: var(--mantine-color-red-7);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.footer {
+  padding: rem(24) 0;
+
+  @mixin light {
+    border-top: 1px solid var(--mantine-color-gray-4);
+  }
+
+  @mixin dark {
+    border-top: 1px solid var(--mantine-color-dark-8);
+  }
+}
+
+.copyrightCol {
+  @media (max-width: $mantine-breakpoint-sm) {
+    p {
+      text-align: right;
+    }
+  }
+}
+
+.btnsCol {
+  display: flex;
+  gap: rem(6);
+  justify-content: flex-end;
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    justify-content: flex-start;
+  }
+}
+
+.menu {
+  gap: rem(8) rem(16);
+  justify-content: center;
+  flex-wrap: wrap;
+
+  a {
+    color: var(--mantine-color-secondary-5);
+
+    @mixin hover {
+      color: var(--mantine-color-primary-5);
+      opacity: 0.8;
+    }
+  }
+}

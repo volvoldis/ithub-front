@@ -1,0 +1,9 @@
+.card {
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+}
+
+.badge {
+  text-transform: none;
+}

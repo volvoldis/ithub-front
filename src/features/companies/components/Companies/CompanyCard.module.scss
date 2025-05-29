@@ -1,0 +1,20 @@
+.card {
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+
+  @mixin hover {
+    cursor: pointer;
+    box-shadow: var(--mantine-shadow-lg);
+
+    @mixin dark {
+      background-color: var(--mantine-color-gray-8);
+    }
+  }
+}
+
+.time {
+  position: absolute;
+  top: rem(12);
+  right: rem(12);
+}

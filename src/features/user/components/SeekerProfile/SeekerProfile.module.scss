@@ -1,0 +1,31 @@
+.card {
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+}
+
+.badge {
+  text-transform: none;
+}
+
+.imgWrap {
+  width: rem(200);
+  height: rem(200);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    width: rem(150);
+    height: rem(150);
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    margin: 0 auto;
+    width: rem(200);
+    height: rem(200);
+  }
+}
+
+.form {
+  @media (max-width: $mantine-breakpoint-xs) {
+    flex-direction: column;
+  }
+}

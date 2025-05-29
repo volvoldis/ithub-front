@@ -1,0 +1,38 @@
+.card {
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+}
+
+.activeCard {
+  background-color: var(--mantine-color-dark-4);
+
+  @mixin dark {
+    background-color: var(--mantine-color-dark-6);
+  }
+
+  @mixin light {
+    background-color: var(--mantine-color-gray-2);
+  }
+}
+
+.title {
+  @mixin hover {
+    text-decoration: none;
+    color: var(--mantine-color-cyan-9);
+  }
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.icon {
+  min-width: rem(40);
+  stroke: var(--mantine-color-primary-5);
+}
+
+.info {
+  flex-wrap: wrap;
+  gap: rem(2) rem(8);
+}

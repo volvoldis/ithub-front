@@ -1,0 +1,48 @@
+.card {
+  border-radius: 0;
+
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+
+  @mixin hover {
+    cursor: pointer;
+    box-shadow: var(--mantine-shadow-lg);
+  }
+}
+
+.active {
+  @mixin dark {
+    background-color: var(--mantine-color-cyan-9);
+  }
+
+  @mixin light {
+    background-color: var(--mantine-color-cyan-9);
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .user {
+    font-weight: bold;
+  }
+}
+
+.user {
+  p {
+    line-height: 1.2;
+  }
+}
+
+.content {
+  flex: 1;
+  gap: rem(2);
+}
+
+.message {
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: rem(3);
+}

@@ -1,0 +1,74 @@
+.burger {
+  display: none;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    display: block;
+  }
+}
+
+.desktopMenu {
+  @media (max-width: $mantine-breakpoint-lg) {
+    display: none;
+  }
+}
+
+.menu {
+  gap: rem(16);
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    align-items: flex-start;
+    margin-left: rem(60);
+  }
+}
+
+.link {
+  text-decoration: none;
+
+  svg {
+    stroke: var(--mantine-color-secondary-5);
+  }
+
+  p {
+    color: var(--mantine-color-secondary-5);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    p {
+      font-size: rem(20);
+    }
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--mantine-color-primary-5);
+    }
+
+    p {
+      color: var(--mantine-color-primary-5);
+    }
+  }
+}
+
+.active {
+  svg {
+    stroke: var(--mantine-color-primary-5);
+  }
+
+  p {
+    color: var(--mantine-color-primary-5);
+    font-weight: bold;
+  }
+}
+
+.innerLink {
+  align-items: center;
+  gap: rem(6);
+}

@@ -1,0 +1,70 @@
+.card {
+  padding: 0;
+
+  @mixin dark {
+    background-color: var(--mantine-color-gray-9);
+  }
+
+  @mixin hover {
+    cursor: pointer;
+    box-shadow: var(--mantine-shadow-lg);
+
+    @mixin dark {
+      background-color: var(--mantine-color-gray-8);
+    }
+  }
+}
+
+.avatarBox {
+  position: relative;
+  min-width: rem(160);
+  width: rem(160);
+  height: rem(160);
+
+  img {
+    width: rem(160);
+    height: rem(160);
+  }
+
+  @media (max-width: $mantine-breakpoint-lg) {
+    display: none;
+  }
+
+  @media (max-width: $mantine-breakpoint-md) {
+    display: block;
+  }
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    min-width: rem(80);
+    width: rem(80);
+    height: rem(80);
+    margin: rem(10);
+
+    img {
+      border-radius: rem(10);
+      width: rem(80);
+      height: rem(80);
+    }
+  }
+}
+
+.timeBadge {
+  position: absolute;
+  top: rem(8);
+  right: rem(8);
+  font-size: rem(10);
+  text-transform: none;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    display: none;
+  }
+}
+
+.badge {
+  font-size: rem(10);
+  text-transform: none;
+}
+
+.content {
+  padding: rem(12);
+}
